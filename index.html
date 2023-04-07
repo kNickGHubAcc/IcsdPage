@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My icsd website</title>
+  <!-- Bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- AOS Library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/8a7e01d09e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">    <!-- Εμφάνιση χρωματιστής ένδειξης όσο βρισκόμαστε και εναλλάσουμε τα links της μπάρας-->
+  <!--- NAVBAR --->
+  <nav class="navbar fixed-top navbar-expand-lg bg-white" data-aos="fade-down" data-aos-duration="1500">     <!-- Η fixed-top κρατάει σταθερή την navbar στην κορυφή, όσο scrolάρουμε -->
+    <div class="container">
+      <a class="navbar-brand logo" href="https://www.icsd.aegean.gr/" target="_blank">ICSD</a>     <!-- Η κλάση logo είναι δική μου -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold">      <!-- Η κλάση ms-auto (margin start-auto) ορίζει αυτόματα το margin από το start του element (πάει το element στο τ΄έλος)-->
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Αρχική</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#studies">Σπουδές</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#department">Τμήμα</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#spells">Επιστημονικοί τομείς</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!---  ΑΡΧΙΚΗ  --->
+  <section id="home">
+    <div class="overlay"></div>     <!-- Το div είναι άδειο και με΄σω CSS αποκτά το μπλε χρώμα που έχει το home section. Αποτελεί child του section -->
+    <div class="container text-white text-center">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-4" data-aos="zoom-in" data-aos-duration="1500">Τμήμα Μηχανικών Πληροφοριακών <br>& Επικοινωνιακών Συστημάτων</h1>
+          <p class="my-4" data-aos="fade-up" data-aos-duration="1500">
+            Το Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων της Πολυτεχνικής Σχολής
+            του Πανεπιστημίου Αιγαίου <br> ιδρύθηκε το 1997. H αποστολή του Τμήματος είναι η παροχή υψηλού επιπέδου
+            επιστημονικής τεχνολογικής παιδείας, <br> η οποία κατατείνει στη δημιουργία επιστημόνων με υψηλού επιπέδου
+            γνώσεις και δεξιότητες <br> στις Τεχνολογίες της Πληροφορικής και των Επικοινωνιών.
+          </p>
+          <a href="https://www.aegean.gr/%ce%b1%ce%ba%ce%b1%ce%b4%ce%b7%ce%bc%ce%b1%cf%8a%ce%ba%cf%8c-%ce%b7%ce%bc%ce%b5%cf%81%ce%bf%ce%bb%cf%8c%ce%b3%ce%b9%ce%bf" target="_blank" class="btn btn-main press-button">Ακαδημαικό Ημερολόγιο</a>    <!-- Η κλάση press-button είναι δική μου -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  ΣΠΟΥΔΕΣ  --->
+  <section id="studies">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center intro-section" data-aos="fade-up" data-aos-duration="1500">     <!-- Η κλάση intro-section είναι δική μου -->
+          <h1>Σπουδές</h1>
+          <div class="divider"></div>      <!-- Το div είναι άδειο και με΄σω CSS γίνεται διαχωριστής με μπλε χρώμα -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/Propt.png">
+              <div class="icon"> <i class="fa-solid fa-building-columns"></i> </div>    <!-- Η κλάση icon είναι δική μου -->
+            </div>
+            <h5 class="mt-5">Προπτυχιακό</h5>
+            <p>
+              Η επιτυχής ολοκλήρωση του Προπτυχιακού προγράμματος σπουδών, οδηγεί στην απονομή ενιαίου και αδιάσπαστου
+              τίτλου σπουδών μεταπτυχιακού επιπέδου (integrated master), στην ειδικότητα του Τμήματος, επιπέδου 7 του Εθνικού
+              και Ευρωπαϊκού Πλαισίου Προσόντων (ΦΕΚ 3524/21.08.2018). Επιπρόσθετα, το Π.Π.Σ., έχει
+              πιστοποιηθεί από την Εθνική Αρχή Ανώτατης Εκπαίδευσης και πληροί τις αρχές του
+              αντίστοιχου προτύπου ποιότητας αλλά και τις αρχές διασφάλισης ποιότητας του Ευρωπαϊκού Χώρου
+              Ανώτατης Εκπαίδευσης.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/Met.jpg">
+              <div class="icon"> <i class="fa-solid fa-user-graduate"></i> </div>
+            </div>
+            <h5 class="mt-5">Μεταπτυχιακό</h5>
+            <p>
+              Στο πλαίσιο του δεύτερου κύκλου σπουδών στο Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών
+              Συστημάτων, προσφέρονται 5 Προγράμματα Μεταπτυχιακών Σπουδών σε γνωστικά αντικείμενα αιχμής στα
+              επιστημονικά πεδία που θεραπεύει το τμήμα και τα οποία οδηγούν στην απόκτηση Διπλώματος Μεταπτυχιακών Σπουδών.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/Did.jpg">
+              <div class="icon"> <i class="fa-solid fa-graduation-cap"></i> </div>
+            </div>
+            <h5 class="mt-5">Διδακτορικό</h5>
+            <p>
+              Οι Διδακτορικές σπουδές στο Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων
+              αποσκοπούν στην προαγωγή της πρωτότυπης επιστημονικής έρευνας και οδηγούν στην απόκτηση
+              Διδακτορικού Διπλώματος (Δ.Δ.). Κατά την τρέχουσα ακαδημαϊκή χρονιά στο τμήμα φοιτούν 92
+              υποψήφιοι διδάκτορες, ενώ έχουν ήδη απονεμηθεί 88 διδακτορικά διπλώματα, συμβάλλοντας έτσι στην
+              προαγωγή της επιστήμης στο πεδίο της πληροφορικής και των επικοινωνιών.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  ΤΜΗΜΑ  --->
+  <section id="department">
+    <div class="overlay"> </div>
+    <div class="container text-white text-center">
+      <div class="row">
+        <div class="col-12 text-center intro-section" data-aos="fade-up" data-aos-duration="1500">
+          <h1>Δες το βίντεό μας</h1>
+          <div class="divider"></div>
+          <p>
+            Το Πρόγραμμα Σπουδών του Τμήματος εξελίσσεται σε 5 έτη και έχει σχεδιαστεί λαμβάνοντας υπόψη διεθνή πρότυπα
+            σπουδών,<br> τα οποία προσαρμόζονται στις ανάγκες της Ελληνικής πραγματικότητας. Καλύπτει το σύνολο των
+            αντικειμένων <br> που συνθέτουν το βασικό κορμό γνώσης που αφορά τα Πληροφοριακά και Επικοινωνιακά συστήματα, <br>
+            προσφέροντας μαθήματα υψηλής ποιότητας.
+          </p>
+          <a href="https://www.youtube.com/watch?v=MG6Jo_uOQ2s&t=3s" target="blank" class="video-button"> <i class="fa-solid fa-play"></i> </a>    <!-- Η κλάση video-button είναι δική μου-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  ΕΠΙΣΤΗΜΟΝΙΚΟΙ ΤΟΜΕΙΣ  --->
+  <section id="spells">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center intro-section" data-aos="fade-up" data-aos-duration="1500">
+          <h1>Επιστημονικοί τομείς</h1>
+          <div class="divider"></div>
+          <p>
+            Σύμφωνα με το πρόγραμμα σπουδών του Τμήματος Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων,
+            στα τρία πρώτα έτη σπουδών οι φοιτητές και φοιτήτριες παρακολουθούν ένα κύκλο υποχρεωτικών μαθημάτων,
+            ενώ από το τέταρτο έτος επιλέγουν μαθήματα που ανήκουν σε έξι επιστημονικούς κύκλους («Ασφάλεια Πληροφοριακών
+            και Επικοινωνιακών Συστημάτων και Ιδιωτικότητα»,«Πληροφοριακά Συστήματα και Επιχειρηματικότητα», «Τεχνολογίες
+            Υπολογιστών και Τηλεπικοινωνιών», «Επικοινωνιακά Συστήματα και Δίκτυα», «Διαχείριση Πληροφορίας και Ευφυή
+            Συστήματα», «Θεμελιώσεις της Επιστήμης των Υπολογιστών»).
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/cyberSecurity.jpg">
+              <div class="icon"> <i class="fa-solid fa-lock"></i> </div>
+            </div>
+            <h5 class="mt-5">Ασφάλεια Πληροφοριακών και Επικοινωνιακών Συστημάτων & Ιδιωτικότητα</h5>
+            <p>
+              Ο κύκλος καλύπτει θέματα όπως Ασφάλεια σε Πληροφοριακά Συστήματα, επικοινωνίες και ασύρματα δίκτυα.
+              Επιπλέον σχετίζεται με προστασία προσωπικών δεδομένων, κανονιστικό και νομικό πλαίσιο στην κοινωνία
+              της πληροφορίας, κρυπτογραφία και σύγχρονα αντικείμενα όπως είναι το Blockchain.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/infoSystem.jpg">
+              <div class="icon"> <i class="fa-solid fa-briefcase"></i> </div>
+            </div>
+            <h5 class="mt-5">Πληροφοριακά συστήματα και Επιχειρηματικότητα</h5>
+            <p>
+              Εφαρμογή της πληροφορικής και των επικοινωνιών στις επιχειρήσεις και τους οργανισμούς. Απόκτηση γνώσεων
+              σχετικά με την Ψηφιακή διακυβέρνηση και την Ψηφιακή επιχειρηματικότητα, ζητήματα σημαντικά για την μετέπειτα
+              επαγγελματική ζωή.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/Telecoms.jpg">
+              <div class="icon"> <i class="fa-solid fa-satellite"></i> </div>
+            </div>
+            <h5 class="mt-5">Τεχνολογίες υπολογιστών και τηλεποικοινωνιών</h5>
+            <p>
+              Ενασχόληση με τα υπολογιστικά συστήματα σε χαμηλό επίπεδο και επίπεδο υλικού καθώς και με τα επικοινωνιακά
+              συστήματα. Όσον αφορά το κομμάτι των επικοινωνιών αποκτούνται γνώσεις για τα δίκτυα υπολογιστών, το cloud
+              computing, τα δίκτυα κινητών και ασύρματων επικοινωνιών και τις δορυφορικές επικοινωνίες.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/Network.png">
+              <div class="icon"> <i class="fa-solid fa-network-wired"></i> </div>
+            </div>
+            <h5 class="mt-5">Επικοινωνιακά Συστήματα και Δίκτυα</h5>
+            <p>
+              Ανάπτυξη γνωστικού υπόβαθρου στον τομέα των Δικτών και των Επικοινωνιακών Συστημάτων Ο κύριος σκοπός
+              του προγράμματος είναι η μύηση των αποφοίτων στα σύγχρονα θέματα των Επικοινωνιακών Συστημάτων, μέσω
+              της εξοικείωσης στις αρχές που διέπουν την ανάλυση, σχεδιασμό, υλοποίηση και διοίκηση ενός Ε.Σ. υψηλών
+              προδιαγραφών και απαιτήσεων.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center" >
+            <div class="service-image">
+              <img src="images/Al.jpg">
+              <div class="icon"> <i class="fa-solid fa-robot"></i> </div>
+            </div>
+            <h5 class="mt-5">Διαχείριση Πληροφορίας και Ευφυή Συστήματα</h5>
+            <p>
+              Συστηματική εκπαίδευση σε εξειδικευμένα θέματα σχεδίασης και ανάπτυξης ευφυών περιβαλλόντων σε δίκτυα
+              νέας γενιάς, έχοντας ως σημείο αναφοράς το Διαδίκτυο των Πραγμάτων.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="service text-center">
+            <div class="service-image">
+              <img src="images/ComputerScience.jpg">
+              <div class="icon"> <i class="fa-sharp fa-solid fa-computer"></i> </div>
+            </div>
+            <h5 class="mt-5">Θεμελιώσεις της Επιστήμης των Υπολογιστών</h5>
+            <p>
+              Ο Τομέας μελετά τις βασικές μαθηματικές ιδιότητες του υλικού και του λογισμικού, τι είναι δυνατόν και
+              τι δεν είναι δυνατόν να υπολογιστεί, πόσο γρήγορα και με πόση μνήμη και αρχές και τεχνικές που διέπουν το
+              σχεδιασμό και την ανάλυση των αλγορίθμων σε διάφορα υπολογιστικά μοντέλα.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  ΕΠΙΚΟΙΝΩΝΙΑ  --->
+  <section id="contact" class="text-white">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro-section text-center" data-aos="fade-up" data-aos-duration="1500">
+          <h1>Επικοινωνία</h1>
+          <div class="divider"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <form action="mailto:katisnikosacc@gmail.com" class="row g-4" method="post" enctype="text/plain">
+            <div class="col-md-6 form-group">     <!-- Η form-group θα πρέπει πάντα να βρίσκεται στο div εντ΄σς του οποίου θα περιέχονται text πεδ΄ία-->
+              <input type="text" name="yourFullName" class="form-control" placeholder="Ονοματεπώνυμο">   <!-- Με την form-control όλα τα text πεδία θα έχουν width:100% -->
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" name="yourEmail" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" name="yourSubject" class="form-control" placeholder="Θέμα">
+            </div>
+            <div class="col-md-12 form-group">
+              <textarea rows="8" cols="50" name="yourMessage" class="form-control" placeholder="Μήνυμα"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" name="" class="press-button">Αποστολή</button>       <!-- Η κλάση press-button είναι δική μου -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  FOOTER  --->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Copyright © 2022</p>
+        </div>
+        <div class="col-md-6 text-md-end">    <!-- Με την text-md-end (Bootstrap κλαση) έχουμε στοίχιση των παρακάτω i στο τέλος δεξιά όταν το μέγεθος της σελίδας είναι από medium και πάνω -->
+          <a href="https://www.facebook.com/theicsd" target="_blank"> <i class="fa-brands fa-facebook fb"></i> </a>    <!-- H fb είναι δική μου κλάση -->
+          <a href="https://twitter.com/icsdaegean" target="_blank"> <i class="fa-brands fa-twitter twit"></i> </a>     <!-- H twit είναι δική μου κλάση -->
+          <a href="https://www.youtube.com/channel/UCUDJInyPBp7U0FU1RBFVT_Q" target="_blank"> <i class="fa-brands fa-youtube yt"></i> </a>    <!-- Η yt είναι δική μου κλάση -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <!-- AOS -->
+  <script src="js/app.js"></script>        <!-- AOS -->
+</body>
+</html>

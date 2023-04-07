@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap');    /* Google Fonts */
+
+body
+{
+  font-family: 'Roboto';
+  line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-weight: 900 !important;    /*Το font-weight γίνεται 900 κάνοντας override οποιαδήποτε άλλη τιμή είχε δωθεί ή θα δωθεί*/
+}
+section
+{
+  padding: 70px 0;
+  z-index: 1;         /*Το περιεχόμενο κάθε section τοποθετείται πάνω από το μπλε χρώμα*/
+  position: relative;   /*Ορίζω όλα τα sections ως parent της .overlay (μπλε χρώμα)*/
+}
+img
+{
+  width: 80%
+}
+
+
+
+/*-------------------------------- NAVBAR & ΑΡΧΙΚΗ -----------------------------*/
+.navbar
+{
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);    /* 0=shadow σε άξονα x, 12px=shadow σε άξονα y, 20px=θόλωση, και το rgba (red green blue alpha)=χρώμα  */
+}
+.logo
+{
+  font-weight: 900;
+}
+.navbar-nav .nav-link.active, .navbar-nav       /*Αφορά την χρωματιστή ένδειξη όσο εναλλάσουμε ή βρισκόμαστε στα links της μπάρας.*/
+{
+  color: blue;
+}
+#home
+{
+  min-height: 100vh;          /*Καλύπτει το 100% (1vh = 1% της σελίδας) του viewport.*/
+  display: flex;         /* Τa στοιχείa εντός του section home γίνονται παιδιά του section (flex-items) και οργανώνονται κατά μήκος μιας γραμμής (οριζόντιας ή κάθετης)  */
+  justify-content: center;     /* Τα flex-items στοιχίζονται κατά μήκος του οριζόντιου άξονα και συγκεκριμένα στο κέντρο αυτού */
+  align-items: center;       /* Τα flex-items στοιχίζονται κατά μήκος του κάθετου άξονα και συγκεκριμένα στο κέντρο του*/
+
+  /*Ιδιότητες αποκλειστικά για την εικόνα*/
+  background-image: url("../images/Background-photo_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.overlay        /*Κλάση που αντιστοιχεί στο μπλε χρώμα*/
+{
+  background: linear-gradient(rgba(17,7,254,0.7),rgba(0,224,254,0.7));
+  position: absolute;      /*Η .overlay γίνεται child του/των section/s που την περιέχουν, οπότε 'κινείται' με βάση το/α section/s*/
+  top: 0;
+  left: 0;
+  z-index: -1;    /*Το μπλε χρώμα τοποθετείται κάτω από τα άλλα elements*/
+  width: 100%;        /*Με τα width και height να είναι 100% η .overlay (μπλε χρώμα) καλύπτει όλο το vieport*/
+  height: 100%;
+}
+.press-button
+{
+  padding: 15px 22px;
+  background: linear-gradient(to right, #00e0fe, #1107fe);     /*To to right δηλώνει ότι η προοδευτική μετάβαση από ένα χρώμα σε άλλο ξεκινάει από αριστερά*/
+  border-radius: 100px;
+  border: none;
+  font-weight: 800;
+  color: #fff;
+  transition: all 0.5s ease;   /*Πρόκεται για 'διαμόρφωση' του κουμπιου και συνδέεται με το hover παρακάτω. Το all δηλώνει ΄΄ότι το transition effect
+                                θα εφαρμοστεί για ολόκληρο το κουμπί, το 0.5s είναι η διάρκειτα του transition effect και το ease ορίζει ότι το
+                                transition effect ξεκινάει αργά, μετά γρήγορα και τελειώνει αργά*/
+}
+.press-button:hover
+{
+  color: black;
+  transform: translateY(-6px);    /*Με την translateY έχουμε στιγμιαία ανασήκωση του κουμπιού*/
+}
+
+
+
+/*------------------------------------- ΣΠΟΥΔΕΣ --------------------------------*/
+.intro-section
+{
+  margin-bottom: 40px;
+}
+.intro-section .divider    /*Hierarchical Selector*/
+{
+  height: 5px;
+  width: 70px;
+  background: linear-gradient(to right, #00e0fe, #1107fe);
+  margin: 15px auto;
+}
+.service .service-image
+{
+  position: relative;      /*Ορίζεται ως ο parent του .service .service-image .icon*/
+}
+.service .service-image .icon
+{
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(to right, #00e0fe, #1107fe);
+  color: #fff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  position: absolute;    /*Το .service .service-image .icon γίνεται child του .service .service-image*/
+  bottom: -35px;      /*Το icon πέφτει εισέρχεται εντός της βασικής εικόνας*/
+  left: 50%;        /*Προσπάθεια για στοίχιση icon στο κέντρο*/
+  transform: translateX(-50%);    /*Στοίχιση icon στο κέντρο*/
+}
+
+
+
+/*------------------------------------ ΤΜΗΜΑ ----------------------------------*/
+#department
+{
+  background-image: url("../images/Background-photo_2.jpg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/Background-photo_2.jpg");
+  background-position: center;
+  background-size: cover;        /*Η εικόνα χωράει ακριβώς σε όλο το viewport*/
+  background-attachment: fixed;   /*Η εικόνα παραμένει σταθερή ΄΄όσο ο χρήστης scrolάρει*/
+}
+.video-button
+{
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to right, #00e0fe, #1107fe);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.btn-play i
+{
+  font-size: 40px;
+}
+
+
+
+/*---------------------------------- ΕΠΙΚΟΙΝΩΝΙΑ --------------------------------*/
+#contact
+{
+  background-image: url("../images/Background-photo_1.jpg");
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/Background-photo_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+form .form-control::placeholder   /*Μορφοποιώ την τιμή της ιδιότητας placeholder*/
+{
+  color: #fff;
+}
+form .form-control    /*Τα 4 text πεδία της φόρμας*/
+{
+  border-radius: 0;
+  background: transparent;   /*Κάνει το background διαφανές με σκοπό το μπροστά element να παίρνει το χρώμα του background*/
+  color: #fff;      /*Όταν γράφω, το text θα είναι μαύρο και μόλις αλλάζω πεδίο θα γίνεται άσπρο*/
+  border-color: #fff;
+}
+form .form-control:focus    /*Όταν κλικάρω σε element με κλάση form .form-control εκτελείται ο παρακάτω κώδικας*/
+{
+  background: transparent;    /*Το πεδίο θα συνεχίζει να έχει το background χρώμα και όχι το default άσπρο*/
+  color: #fff;     /*Όταν γράφω, το text θα είναι άσπρο και μόλις αλλάζω πεδίο θα παραμένει άσπρο*/
+  border-color: black;
+}
+
+
+
+/*------------------------------------- FOOTER ----------------------------------*/
+footer
+{
+  background: blue;
+  color: #fff;      /*Μόνο το text γίνεται άσπρο, όχι τα social icons*/
+}
+footer a
+{
+  text-decoration: none;
+}
+.fb
+{
+  color: #fff;
+}
+.twit
+{
+  color: #1DA1F2;
+}
+.yt
+{
+  color: #FF0000;
+}
